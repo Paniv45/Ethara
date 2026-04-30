@@ -82,11 +82,11 @@ const TaskCard = ({
           <select
             value={task.status}
             onChange={(event) => onStatusChange(task._id, event.target.value)}
-            className="rounded-xl border border-white/10 bg-bg px-3 py-2 text-sm text-white outline-none transition focus:border-sky-400"
+            className="rounded-xl border border-white/10 bg-bg/90 px-3 py-2 text-sm text-white outline-none transition focus:border-sky-400"
           >
-            <option value="Todo">Todo</option>
-            <option value="In-Progress">In-Progress</option>
-            <option value="Completed">Completed</option>
+            <option className="bg-bg text-white" value="Todo">Todo</option>
+            <option className="bg-bg text-white" value="In-Progress">In-Progress</option>
+            <option className="bg-bg text-white" value="Completed">Completed</option>
           </select>
           <span className="text-xs text-slate-400">Mark the task complete when your work is done.</span>
         </div>

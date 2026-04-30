@@ -358,11 +358,11 @@ const ProjectView = () => {
                         name="priority"
                         value={taskForm.priority}
                         onChange={handleTaskChange}
-                        className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-sky-400"
+                        className="w-full rounded-2xl border border-white/10 bg-bg/90 px-4 py-3 text-white outline-none transition focus:border-sky-400"
                       >
-                        <option value="Low">Low</option>
-                        <option value="Med">Med</option>
-                        <option value="High">High</option>
+                        <option className="bg-bg text-white" value="Low">Low</option>
+                        <option className="bg-bg text-white" value="Med">Med</option>
+                        <option className="bg-bg text-white" value="High">High</option>
                       </select>
                     </label>
                   </div>
